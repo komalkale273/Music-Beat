@@ -1,0 +1,377 @@
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: #8b8d8f;
+    margin: 0;
+    padding: auto;
+}
+
+#navbar {
+    font-family: 'Ubuntu' sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 45%;
+
+    height: 65px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+
+}
+
+.nextpage {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.nextpage:hover {
+    color: green;
+}
+
+#navbar ul li {
+    padding: 0 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.logoimg {
+    height: 80px;
+    padding-right: 470px;
+}
+
+.bottom {
+    position: sticky;
+    height: 115px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin-top: 14px;
+
+}
+
+.container {
+    /* min-height: 30vh; */
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+/* #myProgressBar {
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+
+} */
+
+.songItemcontainer {
+    margin-top: 74px;
+}
+
+.brand {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.songItemcontainer {
+    margin-top: 74px;
+}
+
+.icons i {
+    cursor: pointer;
+
+}
+
+.songItem {
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    background-color: rgb(11, 11, 11);
+    color: black;
+    margin: 12px 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 0.5px #8b8d8f4d;
+
+
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+
+.img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 2px rgba(228, 228, 228, 0.184);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 92vh;
+    background-image: url("./luke-greenwood-uZW1GyRLm44-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* player */
+
+
+.player {
+    /* margin-top: 50px; */
+    height: 80vh;
+    width: 40%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #1d1d1de3 0%, #000000 100%);
+    margin: 0 auto;
+    display: block;
+    border: solid 2px #3e434c;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.indicator {
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+}
+
+.small,
+.big,
+.big_play_pause {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: radial-gradient(at bottom right, #292e35 0%, #292e34 80%);
+    border: none;
+    padding: 0;
+}
+
+.big,
+.big_play_pause {
+    height: 60px;
+    width: 60px;
+}
+
+.big_play_pause {
+    background: #00000006;
+}
+
+.play_svg {}
+
+.inner_button,
+.center,
+.inner_button_big,
+.playpause {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    /* align-self: center; */
+    align-items: center;
+}
+
+.inner_button_big {
+    height: 55px;
+    width: 55px;
+}
+
+.playpause {
+    /* background: radial-gradient(at bottom right, #c92711 0%, #ea570a 80%); */
+    height: 55px;
+    width: 55px;
+}
+
+.small:active {
+    transform: translateY(2px);
+    background: radial-gradient(at top left, #292e35 0%, #292e34 80%);
+}
+
+.inner_button:active {
+    background: radial-gradient(at bottom right,
+            rgba(46, 50, 58, 1) 0%,
+            rgba(28, 30, 35, 1) 80%);
+}
+
+/* .big_play_pause:active {
+    transform: translateY(4px);
+    /* background: radial-gradient(at bottom right, #c92711 0%, #ea570a 80%); */
+
+
+.playpause:active {
+    /* background: radial-gradient(at top left, #c92711 0%, #ea570a 80%); */
+}
+
+*/ .big:active {
+    transform: translateY(4px);
+    background: radial-gradient(at top left, #17191e 0%, #1d2025 80%);
+}
+
+.inner_button_big:active {
+    background: radial-gradient(at bottom right,
+            rgb(57, 59, 64) 0%,
+            rgb(12, 13, 16) 112%);
+}
+
+.center {
+    height: 220px;
+    width: 220px;
+    background: radial-gradient(at top left, rgba(28, 30, 35, 1) 0%, #131416 85%);
+}
+
+.album {
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    box-shadow: 12px 10px 20px 6px rgba(23, 24, 26, 0.75), 2px 4px 10px 1px rgba(240, 159, 159, 0.571);
+    object-fit: cover;
+    position: relative;
+}
+
+.album::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 10%;
+    border: 6px solid;
+    border-image: linear-gradient(45deg, red, yellow, green, cyan, blue, magenta, red) 1;
+    animation: rotateBorder 10s linear infinite;
+    z-index: -1;
+}
+
+.song_details {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 30px 0px 30px;
+}
+
+.slider {
+    margin: 20px auto;
+    width: 70%;
+}
+
+.slider_bar {
+    width: 100%;
+    background: #ddd;
+    /* Light grey background for the unfilled portion */
+    height: 6px;
+    border-radius: 5px;
+    position: relative;
+    appearance: none;
+    /* Remove default styling */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.slider_bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c92711;
+    /* Red color for the thumb */
+    cursor: pointer;
+}
+
+.slider_bar::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c92711;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    /* Increase font size for better readability */
+    margin-bottom: 5px;
+}
+
+#currentTime,
+#durationTime {
+    color: #333;
+    /* Darker color for better contrast */
+}
+
+.inner_slider_bar {
+    width: 100%;
+    /* Fill the width of the slider bar */
+    height: 6px;
+    /* Match the height of the slider bar */
+    background: radial-gradient(at top left, #c92711 0%, #ffc107 90%);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.description {
+    line-height: 1.5;
+    margin: 20px
+}
+
+
+
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
